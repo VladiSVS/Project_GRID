@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Karla-medium';
+    src: url(../fonts/Karla/static/Karla-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Karla-bold';
+    src: url(../fonts/Karla/static/Karla-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla-medium';
+}
+body {
+    padding: 0 10%;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Karla-bold';
+    font-size: 2em;
+}
+
+a {
+    color: #000;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20vh;
+    align-items: center;
+}
+
+header > h1 {
+    grid: 1/2/1/2;
+    text-align: left;
+}
+
+header > nav {
+    grid: 2/3/1/2;
+    text-align: right;
+}
+
+header > nav > ul:last-of-type > li {
+    display: inline;
+    margin-left: 5%;
+}
+
+header > nav > ul:last-of-type > li:last-of-type > a {
+    font-family: 'Karla-bold';
+    letter-spacing: 0.3em;
+}
+
+header > nav > ul:first-of-type {
+    display: none;
+} 
+
+/* section */
+
+main > section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    padding-bottom: 10%;
+}
+
+main > section > article:first-of-type {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+main > section > article > img {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+main > section > article > div:last-of-type {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 3vh 3vh;
+    align-items: start;
+ }
+
+main > section > article > div > span {
+    text-align: right;
+}
+
+main > section > article > div:last-of-type > a {
+    font-size: 1.1em;
+}
+
+main > section > article > div > img {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+main > section > article > div:last-of-type > p {
+    color: grey;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 10vh;
+    gap: 2em;
+}
+
+footer > article {
+    display: grid;
+}
+
+footer > article:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+footer > article > div {
+    display: grid;
+    justify-content: center;
+}
+
+footer > article h1 {
+    font-size: 1.2em;
+    margin-bottom: 5vh;
+}
+
+footer > article p {
+    font-size: 1em;
+    margin-bottom: 0.8em;
+}
+
+footer > article a {
+    font-weight: bolder;
+    margin-bottom: 0.8em;
+}
+
+footer > span {
+    color: grey;
+}
+
