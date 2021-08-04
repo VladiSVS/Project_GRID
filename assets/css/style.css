@@ -101,7 +101,7 @@ main > section > article > div > span {
 
 main > section > article > div:last-of-type > a {
     font-size: 1.1em;
-    margin-bottom: 2%;
+    margin-bottom: 0.5em;
 }
 
 main > section > article > div > img {
